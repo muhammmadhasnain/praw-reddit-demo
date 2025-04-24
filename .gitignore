@@ -1,0 +1,25 @@
+# Python Bytecode
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environment
+venv/
+.env
+
+# Environment variables
+.env
+.env.*
+
+# Jupyter Notebook Checkpoints
+.ipynb_checkpoints/
+
+# VSCode Settings
+.vscode/
+
+# macOS / Windows
+.DS_Store
+Thumbs.db
+
+# Log files
+*.log
