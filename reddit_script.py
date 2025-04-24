@@ -1,15 +1,15 @@
-import os
-import praw # type: ignore
-from dotenv import load_dotenv # type: ignore
 
-load_dotenv()
+import praw # type: ignore
+from config import CLIENT_ID, CLIENT_SECRET, USER_AGENT
+
+
 
 
 
 reddit = praw.Reddit(
-    client_id= os.getenv("CLIENt_ID"),
-    client_secret=os.getenv("CLIENT_SECRET"),
-    user_agent=os.getenv("USER_AGENT"),
+    client_id=CLIENT_ID,
+    client_secret=CLIENT_SECRET,
+    user_agent=USER_AGENT,
 )
 
 def fetch_latest_posts(subreddit_name:str , limit:int):
